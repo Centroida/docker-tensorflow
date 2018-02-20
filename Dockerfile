@@ -1,6 +1,6 @@
 # An image with Keras and Hyperas build on top of Tensorflow.
 
-FROM tensorflow:latest
+FROM tensorflow/tensorflow:latest-gpu
 MAINTAINER centroida [https://centroida.ai] <info@centroida.ai>
 
 # Install Keras and Hyperas
