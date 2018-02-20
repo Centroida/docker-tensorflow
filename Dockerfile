@@ -13,4 +13,5 @@ RUN apt-get update -y \
 # TensorBoard
 EXPOSE 6006
 
+# Jupyter
 EXPOSE 8888
