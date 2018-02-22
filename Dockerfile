@@ -9,7 +9,7 @@ RUN apt-get update -y \
 	&& apt-get install vim -y \
 	&& pip install hyperas \
 	&& pip install networkx==1.11 \
-	&& apt-get install libhdf5-serial-dev
+	&& apt-get install libhdf5-serial-dev -y
 
 # TensorBoard
 EXPOSE 6006
