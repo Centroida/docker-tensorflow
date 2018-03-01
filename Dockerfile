@@ -1,6 +1,6 @@
 # An image with Keras and Hyperas build on top of Tensorflow.
 
-FROM tensorflow/tensorflow:latest-gpu-py3
+FROM gw000/keras-full
 
 LABEL maintainer="Centroida [https://centroida.ai] <info@centroida.ai>"
 
