@@ -1,14 +1,12 @@
 # An image with Keras and Hyperas build on top of Tensorflow.
 
-FROM tensorflow/tensorflow:1.6.0-gpu-py3
+FROM tensorflow/tensorflow
 
 LABEL maintainer="Centroida [https://centroida.ai] <info@centroida.ai>"
 
-# Install Keras and Hyperas
+# Setup for basic usage
 RUN apt-get update -y \
 	&& apt-get install vim -y \
-	&& pip3 install hyperas \
-	&& pip3 install networkx==1.11 \
 	&& apt-get install libhdf5-serial-dev -y
 
 # TensorBoard
