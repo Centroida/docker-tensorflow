@@ -7,7 +7,8 @@ LABEL maintainer="Centroida [https://centroida.ai] <info@centroida.ai>"
 # Setup for basic usage
 RUN apt-get update -y \
 	&& apt-get install vim -y \
-	&& apt-get install libhdf5-serial-dev -y
+	&& apt-get install libhdf5-serial-dev -y \
+	&& pip install keras
 
 # TensorBoard
 EXPOSE 6006
